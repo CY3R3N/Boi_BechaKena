@@ -1,0 +1,107 @@
+.container {
+    margin-bottom: 100px;
+}
+
+.orange-bg {
+    background-color: #eecfeefb;
+    border-radius: 7px;
+}
+
+.carousel-item {
+    padding: 25px 20px;
+}
+
+.location {
+    color: #dbf3f5;
+}
+
+.rent-now-button {
+    background-image: linear-gradient(to bottom, #FF589B 0%, #FF136F 100%);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 9px 25px;
+    cursor: pointer;
+}
+
+#nav-img {
+    width: 110.07px;
+    height: 59px;
+    border-radius: 8px;
+}
+
+.cat-1,
+.cat-2,
+.cat-3 {
+    padding: 10px 30px;
+    border-radius: 10px;
+}
+
+.cat-1 {
+    background-color: orange;
+}
+
+.cat-2 {
+    background-color: orchid;
+}
+
+.cat-3 {
+    background-color: blue;
+}
+
+.categories h1 {
+    color: white;
+}
+
+.categories img {
+    width: 100px;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px lightgray;
+}
+
+.card-footer {
+    background-color: white;
+    border-top: none;
+}
+
+table {
+    width: 100%;
+    color: black;
+    font-family: monospace;
+    font-size: 15px;
+    text-align: left;
+    border-color: black;
+    border-style: solid;
+}
+
+#customers {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#customers td,
+#customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#customers tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#customers tr:hover {
+    background-color: #ddd;
+}
+
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #3c3c3c;
+    color: white;
+}

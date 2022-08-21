@@ -1,0 +1,172 @@
+<html>
+
+<head>
+    <title>House Rental Management System</title>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="m1.css">
+
+
+</head>
+
+
+<body style="background-color:rgb(230, 242, 217);">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+                <img id="nav-img" src="img/logo.png" alt="logo image">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a href="index.html" style="color:rgb(37, 36, 36);">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    &nbsp; &nbsp;
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="color:rgb(37, 36, 36);">View Houses <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="viewhouse.php" style="color:rgb(37, 36, 36);">Houses</a></li>
+                            <li><a href="viewrating.php" style="color:rgb(37, 36, 36);">Rating</a></li>
+                        </ul>
+                    </li>
+                    &nbsp; &nbsp;
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="signup.html" style="color:rgb(37, 36, 36);"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>&nbsp; &nbsp;
+                    <li><a href="signin.html" style="color:rgb(37, 36, 36);"><span class="glyphicon glyphicon-log-in"></span> Sign In</a></li>
+                </ul>
+                &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+
+                <ul class="nav navbar-nav navbar-right">
+
+                    <li><a href="#"><span class="glyphicon glyphicon-user"></span></a>
+                    </li>
+                    <li><a href="index.html" style="color:rgb(37, 36, 36);"><span class="glyphicon glyphicon-user"></span> Sign Out</a></li>
+                </ul>
+            </div>
+        </nav>
+
+    </div>
+    <div class="container py-5">
+        <!-- For demo purpose -->
+        <div class="row mb-4">
+            <div class="col-lg-8 mx-auto text-center">
+                <h1 class="display-6">Bootstrap Payment Forms</h1>
+            </div>
+        </div>
+        <!-- End -->
+        <div class="row">
+            <div class="col-lg-6 mx-auto">
+                <div class="card ">
+                    <div class="card-header">
+                        <div class="bg-white shadow-sm pt-4 pl-2 pr-2 pb-2">
+                            <!-- Credit card form tabs -->
+                            <ul role="tablist" class="nav bg-light nav-pills rounded nav-fill mb-3">
+                                <li class="nav-item">
+                                    <a data-toggle="pill" href="#credit-card" class="nav-link active "> <i class="fas fa-credit-card mr-2"></i> Credit Card </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a data-toggle="pill" href="#net-banking" class="nav-link "> <i class="fas fa-mobile-alt mr-2"></i> Bkash </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- End -->
+                        <!-- Credit card form content -->
+                        <div class="tab-content">
+                            <!-- credit card info-->
+                            <div id="credit-card" class="tab-pane fade show active pt-3">
+                                <form role="form" onsubmit="event.preventDefault()">
+                                    <div class="form-group"> <label for="username">
+                                            <h6>Card Owner</h6>
+                                        </label> <input type="text" name="username" placeholder="Card Owner Name" required class="form-control "> </div>
+
+                                    <div class="form-group"> <label for="cardNumber">
+                                            <h6>Renter Id</h6>
+                                        </label>
+                                        <div class="input-group"> <input type="text" name="cardNumber" placeholder="Renter ID" class="form-control " required>
+                                            <div class="input-group-append"> <span class="input-group-text text-muted"> <i class="fab fa-cc-visa mx-1"></i> <i class="fab fa-cc-mastercard mx-1"></i> <i class="fab fa-cc-amex mx-1"></i> </span> </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group"> <label for="cardNumber">
+                                        <h6>Booking Id</h6>
+                                    </label>
+                                        <div class="input-group"> <input type="text" name="cardNumber" placeholder="Booking ID" class="form-control " required>
+                                            <div class="input-group-append"> <span class="input-group-text text-muted"> <i class="fab fa-cc-visa mx-1"></i> <i class="fab fa-cc-mastercard mx-1"></i> <i class="fab fa-cc-amex mx-1"></i> </span> </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group"> <label for="cardNumber">
+                                            <h6>Card number</h6>
+                                        </label>
+                                        <div class="input-group"> <input type="text" name="cardNumber" placeholder="Valid card number" class="form-control " required>
+                                            <div class="input-group-append"> <span class="input-group-text text-muted"> <i class="fab fa-cc-visa mx-1"></i> <i class="fab fa-cc-mastercard mx-1"></i> <i class="fab fa-cc-amex mx-1"></i> </span> </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card-footer">
+                                        <div class="card-body">
+
+                                            <a href="../controller/payment1.php" class="btn btn-primary" style="background-color: rgb(243, 118, 211);">Submit</a></center><br>
+
+                                        </div>
+
+                                        </for>
+                                    </div>
+                            </div>
+                            <!-- End -->
+                            <!-- Paypal info -->
+
+                            <!-- End -->
+                            <!-- bank transfer info -->
+
+                            <div id="net-banking" class="tab-pane fade pt-3">
+                                <div class="form-group"> <label for="cardNumber">
+                                        <h6>BKash</h6>
+                                    </label>
+                                    <div class="input-group"> <input type="text" name="cardNumber" placeholder="Valid Bkash number" class="form-control " required>
+                                        <div class="input-group-append"> <span class="input-group-text text-muted"> <i class="fab fa-cc-visa mx-1"></i> <i class="fab fa-cc-mastercard mx-1"></i> <i class="fab fa-cc-amex mx-1"></i> </span> </div>
+                                    </div>
+                                    <div class="input-group"> <input type="number" name="cardNumber" placeholder="Renter Id" class="form-control " required>
+                                        <div class="input-group-append"> <span class="input-group-text text-muted"> <i class="fab fa-cc-visa mx-1"></i> <i class="fab fa-cc-mastercard mx-1"></i> <i class="fab fa-cc-amex mx-1"></i> </span> </div>
+                                    </div>
+                                    <div class="input-group"> <input type="number" name="cardNumber" placeholder="Booking No" class="form-control " required>
+                                        <div class="input-group-append"> <span class="input-group-text text-muted"> <i class="fab fa-cc-visa mx-1"></i> <i class="fab fa-cc-mastercard mx-1"></i> <i class="fab fa-cc-amex mx-1"></i> </span> </div>
+                                    </div>
+
+                                </div>
+                                <center>
+                                    <div class="card-body">
+
+                                        <a href="../controller/payment1.php" class="btn btn-primary" style="background-color: rgb(243, 118, 211);">Submit</a></center><br>
+
+                                </div>
+
+                                </center>
+
+                                <p class="text-muted">Note: After clicking on the button, you will be directed to a secure gateway for payment. After completing the payment process, you will be redirected back to the website to view details of your order. </p>
+                            </div>
+
+
+
+
+                            <!-- End -->
+                            <!-- End -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+
+</html>
